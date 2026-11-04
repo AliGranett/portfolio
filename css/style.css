@@ -402,6 +402,17 @@ img, svg { max-width: 100%; }
   margin-bottom: 38px;
 }
 
+.hero-projects {
+  margin-bottom: 22px;
+}
+.hero-projects-label {
+  margin: 0 0 10px;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
 .hero-links {
   display: flex;
   flex-wrap: wrap;
@@ -451,6 +462,58 @@ img, svg { max-width: 100%; }
   color: var(--muted);
   font-size: 1.0625rem;
 }
+
+/* Projects ----------------------------------------------------------------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  background: #fff;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  color: inherit;
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease),
+    transform 0.25s var(--ease);
+}
+.project-card:hover {
+  color: inherit;
+  border-color: var(--line);
+  box-shadow: 0 12px 32px rgba(21, 24, 29, 0.06);
+  transform: translateY(-2px);
+}
+.project-title {
+  font-size: 1.1875rem;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.project-repo {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--muted);
+  margin-bottom: 14px;
+  word-break: break-word;
+}
+.project-body {
+  color: var(--ink-soft);
+  font-size: 0.9375rem;
+  flex: 1;
+}
+.project-cta {
+  margin-top: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+.project-card:hover .project-cta { color: var(--navy); }
 
 /* About -------------------------------------------------------------------- */
 .about-layout {
@@ -791,6 +854,9 @@ img, svg { max-width: 100%; }
   opacity: 1;
   transform: none;
 }
+.project-card.reveal.is-visible:hover {
+  transform: translateY(-2px);
+}
 /* Fallback: if JS never runs, nothing stays hidden. */
 .no-js .reveal,
 html:not(.js) .reveal {
@@ -806,7 +872,14 @@ html:not(.js) .reveal {
     grid-template-columns: minmax(0, 1fr);
     gap: 36px;
   }
+  .project-grid,
   .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 32px; }
+}
+
+@media (max-width: 1180px) {
+  .nav-desktop { gap: 16px; }
+  .nav-list { gap: 16px; }
+  .nav-link { font-size: 0.875rem; }
 }
 
 @media (max-width: 820px) {
@@ -826,6 +899,7 @@ html:not(.js) .reveal {
   .hero-actions { flex-direction: column; align-items: stretch; }
 
   .edu-grid,
+  .project-grid,
   .skills-grid { grid-template-columns: minmax(0, 1fr); }
 
   .timeline { padding-left: 0; }
@@ -834,6 +908,7 @@ html:not(.js) .reveal {
 
   .role-card,
   .edu-card,
+  .project-card,
   .fact-card { padding: 24px 22px; }
 
   .contact-row { grid-template-columns: minmax(0, 1fr); gap: 4px; }
