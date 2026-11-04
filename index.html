@@ -29,6 +29,7 @@
 
     <nav class="nav-desktop" aria-label="Primary">
       <ul class="nav-list">
+        <li><a class="nav-link" href="#projects">Projects</a></li>
         <li><a class="nav-link" href="#about">About</a></li>
         <li><a class="nav-link" href="#experience">Experience</a></li>
         <li><a class="nav-link" href="#research">Research</a></li>
@@ -55,6 +56,7 @@
     </div>
     <nav aria-label="Mobile">
       <ul class="mobile-nav-list">
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#research">Research</a></li>
@@ -84,12 +86,27 @@
       </p>
 
       <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="#experience">View Experience</a>
-        <a class="btn btn-ghost" href="#research">View Projects / Research</a>
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="#experience">View Experience</a>
         <a class="btn btn-text" href="assets/cv/Ali_Shaer_CV.pdf" download>
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg>
           Download CV
         </a>
+      </div>
+
+      <div class="hero-projects reveal">
+        <p class="hero-projects-label">Selected work</p>
+        <ul class="hero-links">
+          <li>
+            <a class="chip-link" href="https://github.com/aligranett/stone_llm" target="_blank" rel="noopener noreferrer">Asterion Crystals</a>
+          </li>
+          <li>
+            <a class="chip-link" href="https://github.com/aligranett/adaptive-cpu-chip-test-rl" target="_blank" rel="noopener noreferrer">Adaptive chip testing</a>
+          </li>
+          <li>
+            <a class="chip-link" href="https://github.com/aligranett/neat" target="_blank" rel="noopener noreferrer">NEAT</a>
+          </li>
+        </ul>
       </div>
 
       <ul class="hero-links reveal">
@@ -115,11 +132,59 @@
     </div>
   </section>
 
+  <!-- ===== Projects ===== -->
+  <section class="section section-alt" id="projects">
+    <div class="shell">
+      <header class="section-head reveal">
+        <p class="section-index">01</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-lede">
+          Selected repositories — LLM study software, reinforcement learning, and neuroevolution.
+        </p>
+      </header>
+
+      <div class="project-grid">
+        <a class="project-card reveal" href="https://github.com/aligranett/stone_llm" target="_blank" rel="noopener noreferrer">
+          <p class="role-period">TypeScript · React</p>
+          <h3 class="project-title">Asterion Crystals</h3>
+          <p class="project-repo">aligranett/stone_llm</p>
+          <p class="project-body">
+            Study interface for inquiry learning. Participants run experiments on a hidden system
+            and work with an LLM-based Research Partner.
+          </p>
+          <span class="project-cta">View on GitHub</span>
+        </a>
+
+        <a class="project-card reveal" href="https://github.com/aligranett/adaptive-cpu-chip-test-rl" target="_blank" rel="noopener noreferrer">
+          <p class="role-period">Python · Reinforcement learning</p>
+          <h3 class="project-title">Adaptive chip testing</h3>
+          <p class="project-repo">aligranett/adaptive-cpu-chip-test-rl</p>
+          <p class="project-body">
+            An agent chooses whether to keep testing a CPU chip or stop early, balancing test cost
+            against classification quality. Compares Q-learning and DQN with supervised baselines.
+          </p>
+          <span class="project-cta">View on GitHub</span>
+        </a>
+
+        <a class="project-card reveal" href="https://github.com/aligranett/neat" target="_blank" rel="noopener noreferrer">
+          <p class="role-period">Python · Neuroevolution</p>
+          <h3 class="project-title">NEAT</h3>
+          <p class="project-repo">aligranett/neat</p>
+          <p class="project-body">
+            An implementation of Kenneth O. Stanley’s NEAT algorithm, NeuroEvolution of Augmenting
+            Topologies, including an XOR experiment.
+          </p>
+          <span class="project-cta">View on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== About ===== -->
   <section class="section" id="about">
     <div class="shell">
       <header class="section-head reveal">
-        <p class="section-index">01</p>
+        <p class="section-index">02</p>
         <h2 class="section-title">About</h2>
       </header>
 
@@ -177,7 +242,7 @@
   <section class="section section-alt" id="experience">
     <div class="shell">
       <header class="section-head reveal">
-        <p class="section-index">02</p>
+        <p class="section-index">03</p>
         <h2 class="section-title">Experience</h2>
         <p class="section-lede">
           Building AI systems, researching how they teach, and teaching the people who will build the
@@ -268,7 +333,7 @@
   <section class="section section-dark" id="research">
     <div class="shell">
       <header class="section-head reveal">
-        <p class="section-index">03</p>
+        <p class="section-index">04</p>
         <h2 class="section-title">Research</h2>
       </header>
 
@@ -325,7 +390,7 @@
   <section class="section section-alt" id="education">
     <div class="shell">
       <header class="section-head reveal">
-        <p class="section-index">04</p>
+        <p class="section-index">05</p>
         <h2 class="section-title">Education</h2>
       </header>
 
@@ -351,7 +416,7 @@
   <section class="section" id="skills">
     <div class="shell">
       <header class="section-head reveal">
-        <p class="section-index">05</p>
+        <p class="section-index">06</p>
         <h2 class="section-title">Skills</h2>
       </header>
 
@@ -413,7 +478,7 @@
   <section class="section section-alt" id="contact">
     <div class="shell">
       <header class="section-head reveal">
-        <p class="section-index">06</p>
+        <p class="section-index">07</p>
         <h2 class="section-title">Contact</h2>
         <p class="section-lede">
           Open to research collaborations, AI engineering work, and conversations about LLMs in
@@ -432,10 +497,6 @@
             <div class="contact-row">
               <dt>Email</dt>
               <dd><a href="mailto:Shaer.ali.gr@gmail.com">Shaer.ali.gr@gmail.com</a></dd>
-            </div>
-            <div class="contact-row">
-              <dt>Phone</dt>
-              <dd><a href="tel:+9720526137775">0526137775</a></dd>
             </div>
           </dl>
         </div>
